@@ -1,0 +1,108 @@
+/*
+    Student Name:Jorge Roman
+*/
+
+/* Begin Mobile Styles */
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+    display: block;
+}
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for salon image and header */
+.salon {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/salon.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.razor {
+	position: absolute;
+	top: 20%;
+	margin: auto;
+	padding: 2em;
+	color: #58945;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.logo {
+	max-width: 50%;
+    display: block;
+}
+	
+
+.style, h3 {
+	font-family:'Lucida Handwriting', cursive;
+}
+
+.color {
+	color:#80ff99;
+}
+
+
+.razor p{
+	font-size: 1.5em;
+	width: 70%;
+	line-height: 1.5;
+}
+
+.frame {
+	position:relative;
+	max-width:250px;
+	margin:2%auto;
+}
+
+.frame1 {
+	position:relative;
+	max-width:450px;
+	margin:2%auto;
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) {  
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+}
+
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 992px) {  
+
+    /* Desktop Viewport: Style rules for form */
+    form {
+        width: auto;
+        margin-bottom: 2%;
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px; 
+    }
+    
+    .btn {
+        grid-column: 1 / span 3;
+    }
+	
+	.logo {
+	max-width: 50%;
+    display: block;
+	}
+	
+
+}
